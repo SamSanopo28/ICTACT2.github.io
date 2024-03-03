@@ -38,7 +38,7 @@ Quiz.prototype.guess = function (answer) {
 
 	}
 
-	this.questionIndex++;
+	this.qIndex++;
 
 }
 Quiz.prototype.getqIndex = function () {
@@ -100,7 +100,7 @@ function guess(id, guess) {
 
 
 function showProgress() {
-	var currentQuestionNumber = quiz.questionIndex + 1;
+	var currentQuestionNumber = quiz.qIndex + 1;
 	var element = document.getElementById('progress');
 	element.innerHTML = "Questions " + currentQuestionNumber + " of " + quiz.questions.length;
 }
